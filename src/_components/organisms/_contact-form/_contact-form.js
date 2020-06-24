@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button } from "@material-ui/core";
+import { Button, Typography, Input } from "@material-ui/core";
 import Label from "../../atoms/_label/_label";
 import InputBox from "../../atoms/_input/_input";
 
@@ -24,53 +24,141 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     margin: "40px auto 0 auto",
-    width:"80%",
+    width: "80%",
   },
   button1: {
     color: "#000000",
     textTransform: "none",
-    width:"100%",
+    width: "100%",
     backgroundColor: "#ffffff",
-    '&:hover':{
-        backgroundColor: "#fffff3",
-    }
+    "&:hover": {
+      backgroundColor: "#fffff3",
+    },
+  },
+  error: {
+    color: "red",
+    textAlign: "initial",
   },
 }));
 
 export default function ContactForm() {
   const classes = useStyles();
-//     const [error,setError]=useState(false);
-// const errorMessage=""
-const handleSubmit=()=>{
-alert("Button is clicked");
-}
+  const [name, setName] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [email, setEmail] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [phone, setPhone] = useState("");
+  const [phoneError, setPhoneError] = useState("");
+  const [subject, setSubject] = useState("");
+  const [subjectError, setSubjectError] = useState("");
+  const [error, setError] = useState(true);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Name
+    var namePattern = /^[a-zA-Z]+$/;
+
+    if (name === "" || name === null){
+      setNameError("* Name cannot be empty");
+    } 
+    else if (!namePattern.test(name))
+      setNameError("* Please provide a valid name");
+    else setNameError("");
+
+    // Email
+    var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (email === "" || email === null)
+      setEmailError("* Email cannot be empty");
+    else if (!emailPattern.test(email))
+      setEmailError("* Please provide a valid email");
+    else setEmailError("");
+
+    // Phone
+
+    if (phone === "" || phone === null)
+      setPhoneError("* Phone number cannot be empty");
+    else if (isNaN(phone) || phone.length != 10)
+      setPhoneError("* Please provide a valid phone number");
+    else setPhoneError("");
+
+    //Subject
+
+    if (subject === "" || subject === null)
+      setSubjectError("* Subject cannot be empty");
+    else setSubjectError("");
+
+  //   if(nameError!=="" || emailError!=="" || phoneError!=="" || subjectError!=="" )
+  //   {
+  //    setError(true);
+  //   }
+  //   else
+  //   setError(false);
+   };
 
   return (
     <div className={classes.form}>
-      <div className={classes.firstName}>
-        <Label text={"First name"} />
-       <InputBox type={"text"} placeholder={"first name"} />
-  
-      </div>
-      <div className={classes.firstName}>
-      <Label text={"Last name"} />
-      <InputBox type={"text"} placeholder={"first name"} />
-      </div>
-      <div className={classes.firstName}>
-      <Label text={"Email"} />
-      <InputBox type={"email"} placeholder={"email"} />
-      </div>
-      <div className={classes.firstName}>
-      <Label text={"Phone number"} />
-      <InputBox type={"text"} placeholder={"phone number"} />
-      </div>
-      <div className={classes.firstName}> 
-      <Label text={"Subject"} />
-      <InputBox type={"text"} placeholder={"Subject"} />
-      </div>
-      <div className={classes.button}>
-        <Button onClick={()=>handleSubmit()} className={classes.button1}>Submit</Button>
-      </div>
+      <form>
+        <div className={classes.firstName}>
+          <Label text={"Name"} />
+          <InputBox
+            type={"text"}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+            placeholder={"Enter name"}
+          />
+          <Typography className={classes.error}>
+            {nameError !== "" && nameError}
+          </Typography>
+        </div>
+
+        <div className={classes.firstName}>
+          <Label text={"Email"} />
+          <InputBox
+            type={"email"}
+            placeholder={"email"}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <Typography className={classes.error}>
+            {emailError !== "" && emailError}
+          </Typography>
+        </div>
+        <div className={classes.firstName}>
+          <Label text={"Phone number"} />
+          <InputBox
+            type={"text"}
+            placeholder={"phone number"}
+            onChange={(e) => {
+              setPhone(e.target.value);
+            }}
+          />
+          <Typography className={classes.error}>
+            {phoneError !== "" && phoneError}
+          </Typography>
+        </div>
+        <div className={classes.firstName}>
+          <Label text={"Subject"} />
+          <InputBox
+            type={"text"}
+            placeholder={"Subject"}
+            onChange={(e) => {
+              setSubject(e.target.value);
+            }}
+          />
+          <Typography className={classes.error}>
+            {subjectError !== "" && subjectError}
+          </Typography>
+        </div>
+        <div className={classes.button}>
+          <Button className={classes.button1} onClick={handleSubmit}>
+            Submit
+          </Button>
+        </div>
+      </form>
     </div>
   );
 }

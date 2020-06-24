@@ -24,8 +24,12 @@ const useStyles = makeStyles((theme) => ({
     width: "inherit",
     margin: "0 0 10px 0",
   },
+  error: {
+    color: "red",
+    textAlign: "initial",
+  },
 }));
-
+ 
 export default function AddImageBox(props) {
   const classes = useStyles();
 
@@ -43,6 +47,9 @@ export default function AddImageBox(props) {
             props.setimageUrl(e.target.value);
           }}
         />
+         <Typography className={classes.error}>
+            {props.imageUrlError !== "" && props.imageUrlError}
+          </Typography>
       </div>
       <div className={classes.flexItem}>
         <InputBox
@@ -53,6 +60,9 @@ export default function AddImageBox(props) {
             props.setimageTitle(e.target.value);
           }}
         />
+        <Typography className={classes.error}>
+            {props.imageTitleError !== "" && props.imageTitleError}
+          </Typography>
       </div>
       <MyButton
         className={classes.bttn}
