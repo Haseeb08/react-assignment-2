@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
 import Label from "../../atoms/_label/_label";
@@ -39,13 +39,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ContactForm() {
   const classes = useStyles();
-    const [error,setError]=useState(false);
-const errorMessage=""
+//     const [error,setError]=useState(false);
+// const errorMessage=""
 const handleSubmit=()=>{
-alert("hello from button");
-}
-const handleChange=()=>{
-
+alert("Button is clicked");
 }
 
   return (
@@ -53,7 +50,7 @@ const handleChange=()=>{
       <div className={classes.firstName}>
         <Label text={"First name"} />
        <InputBox type={"text"} placeholder={"first name"} />
-  {error && <p>{errorMessage}</p>}
+  
       </div>
       <div className={classes.firstName}>
       <Label text={"Last name"} />

@@ -1,18 +1,19 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Typography } from "@material-ui/core";
 import Title from "../../atoms/_title/_title";
 import ContactForm from "../_contact-form/_contact-form";
+import {myTheme} from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    backgroundColor: "rgb(240, 243, 243)",
+    backgroundColor: myTheme.palette.background.default,
     minHeight: "86.5vh",
   },
   form: {
-      backgroundColor: "darkslategrey",
+    backgroundColor: myTheme.palette.background.paper,
        width: '40%',
       margin: "auto",
+      //paddingBottom: "20px",
   }
 }));
 

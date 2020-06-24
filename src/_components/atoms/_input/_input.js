@@ -22,6 +22,8 @@ export default function InputBox(props) {
         type={props.type}
         fullWidth
         placeholder={props.placeholder}
+        onChange={props.onChange}
+        defaultValue={props.defaultValue}
       />
     </div>
   );

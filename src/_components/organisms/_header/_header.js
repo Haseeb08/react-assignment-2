@@ -1,11 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import NavMenu from "../../molecules/_nav-menu/_nav-menu";
-
+import {myTheme} from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    backgroundColor: "darkslategrey",
+    backgroundColor: myTheme.palette.background.paper,
     // position: "fixed",
   },
 }));

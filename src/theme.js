@@ -1,15 +1,16 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import purple from "@material-ui/core/colors/purple";
 import green from "@material-ui/core/colors/green";
+import red from "@material-ui/core/colors/red";
 
 export const myTheme = createMuiTheme({
   palette: {
     primary: {
       //   main: purple[500],   Colors need to be imported
-      main: "#ffffff", // We can directly give colors in # without importing.
+      main: green[500], // We can directly give colors in # without importing.
     },
     secondary: {
-      main: "#ffa500",
+      main: red[500],
     },
     myColor: {
       redColor: "#f10e41",
@@ -46,8 +47,8 @@ export const myTheme = createMuiTheme({
       white: "#ffffff",
     },
     background: {
-      default: "#cde2cd",
-      paper: "#000",
+      default: "rgb(240, 243, 243)",
+      paper: "darkslategrey",
     },
   },
   typography: {
@@ -81,6 +82,14 @@ export const myTheme = createMuiTheme({
         fontWeight: "600",
         fontFamily: "poppins",
       },
+      subtitle1: {
+        fontSize: "17px",
+        color: "#ffffff",
+        lineHeight: "1",
+        fontWeight: "600",
+        fontFamily: "poppins",
+      },
+
     h2: {
       fontSize: "35px",
       textAlign: "center",
