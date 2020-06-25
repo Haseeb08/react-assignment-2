@@ -84,7 +84,8 @@ export const myTheme = createMuiTheme({
       },
       subtitle1: {
         fontSize: "17px",
-        color: "#ffffff",
+        //color: "#ffffff",
+        color: "#000000",
         lineHeight: "1",
         fontWeight: "600",
         fontFamily: "poppins",

@@ -10,12 +10,16 @@ const useStyles = makeStyles((theme) => ({
     cursor: "pointer",
     width: "250px",
     height: "auto",
-    backgroundColor: myTheme.palette.background.paper,
-    display: "flex",
+  // backgroundColor: myTheme.palette.background.paper,
+  backgroundColor: '#fdfdfd',
+    boxShadow: '1px 2px 1px 5px #f7f9f9',
+  
+  display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     paddingBottom: "5px",
+    borderRadius: "20px",
   },
   image: {
     width: "200px",
@@ -23,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: "cover",
     objectFit: "contain",
     marginTop: "20px",
+    borderRadius: "20px",
   },
   text: {
     marginTop: "10px",

@@ -21,7 +21,7 @@ export default function Main(props) {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <Route exact path="/" component={withRouter(Home)} />
+      <Route exact path="/home" component={withRouter(Home)} />
 
       {/* <Route path="/gallery-admin" component={GalleryAdmin} /> */}
 
