@@ -15,7 +15,7 @@ export default {
 
 // const style = {
 //     backgroundColor: "darkslategrey",
-// }
+// } 
 
 export const header = () => {
   return (
