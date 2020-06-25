@@ -18,7 +18,7 @@ export default function Header(props) {
  let auth = new Auth();
   const classes = useStyles();
   return (
-    <div className={classes.header}>
+    <div style={ props.style} className={classes.header}>
      <NavMenu />
      <Button onClick={auth.logout}>logout</Button>
     </div>

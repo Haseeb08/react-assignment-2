@@ -24,6 +24,7 @@ export default function InputBox(props) {
         placeholder={props.placeholder}
         onChange={props.onChange}
         defaultValue={props.defaultValue}
+        style={props.style}
       />
     </div>
   );

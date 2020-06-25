@@ -8,9 +8,12 @@ const useStyles = makeStyles((theme) => ({
   //  backgroundColor: myTheme.palette.background.default,
   background: 'rgb(34,193,195)',
   background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)',
-  height: '86.5vh',
+  width: "inherit",
 },
   allImages: {
+
+   
+
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr",
     justifyItems: "center",
@@ -26,7 +29,7 @@ export default function Gallery(props) {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      <div className={classes.allImages}>
+      <div style={props.style} className={classes.allImages}>
         {props.allImages.map((img, key) => (
           <ImageBox key={img.id} img={img} />
         ))}

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: "#ffffff",
     
-
+ 
     
     '&:hover':{
         backgroundColor: "lightcyan",
@@ -37,7 +37,7 @@ export default function NavItem(props) {
   const classes = useStyles();
   return (
     <div className={(props.active===true && classes.active) + " " +classes.itemBox}>
-      <Typography variant="h4" className={classes.text}>{props.title}</Typography>
+      <Typography variant="h4" className={classes.text} style={props.style}>{props.title}</Typography>
     </div>
   );
 }

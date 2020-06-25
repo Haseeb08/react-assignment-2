@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import InputBox from "../../atoms/_input/_input";
 import MyButton from "../../atoms/_button/_button";
 import { Typography } from "@material-ui/core";
-import {myTheme} from "../../../theme";
+import { myTheme } from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   addImageBox: {
@@ -29,12 +29,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "initial",
   },
 }));
- 
+
 export default function AddImageBox(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.addImageBox}>
+    <div style={props.boxStyle} className={classes.addImageBox}>
       <div className={classes.flexItem}>
         <Typography variant="h3">Enter image details</Typography>
       </div>
@@ -47,9 +47,9 @@ export default function AddImageBox(props) {
             props.setimageUrl(e.target.value);
           }}
         />
-         <Typography className={classes.error}>
-            {props.imageUrlError !== "" && props.imageUrlError}
-          </Typography>
+        <Typography  style={props.errorStyle} className={classes.error}>
+          {props.imageUrlError !== "" && props.imageUrlError}
+        </Typography>
       </div>
       <div className={classes.flexItem}>
         <InputBox
@@ -60,9 +60,9 @@ export default function AddImageBox(props) {
             props.setimageTitle(e.target.value);
           }}
         />
-        <Typography className={classes.error}>
-            {props.imageTitleError !== "" && props.imageTitleError}
-          </Typography>
+        <Typography style={props.errorStyle} className={classes.error}>
+          {props.imageTitleError !== "" && props.imageTitleError}
+        </Typography>
       </div>
       <MyButton
         className={classes.bttn}

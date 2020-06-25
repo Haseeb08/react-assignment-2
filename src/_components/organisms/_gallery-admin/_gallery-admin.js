@@ -123,6 +123,7 @@ export default function GalleryAdmin({ allImages, setAllImages }) {
             img={img}
             handleImageDelete={handleImageDelete}
             handleImageEdit={handleImageEdit}
+            isAdmin={true}
           />
         ))}
       </div>

@@ -72,7 +72,7 @@ export default function ImageBox(props) {
 
   const imgUrl = props.img.url;
   return (
-    <div className={classes.box}>
+    <div style={props.style} className={classes.box}>
       <div
         className={classes.image}
         style={{ backgroundImage: "URL(" + imgUrl + ")" }}
@@ -82,7 +82,7 @@ export default function ImageBox(props) {
         <Typography variant="subtitle1">{props.img.name}</Typography>
       </div>
 
-      {!edit && window.location.pathname.includes("admin") && (
+      {!edit && props.isAdmin && (
         <div className={classes.buttons}>
           <div className={classes.flexItem}>
             <MyButton
