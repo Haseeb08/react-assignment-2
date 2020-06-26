@@ -3,7 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   template: {
-    backgroundColor: "",
+    width: 'auto',
+    minWidth: '590px',
   },
 }));
 

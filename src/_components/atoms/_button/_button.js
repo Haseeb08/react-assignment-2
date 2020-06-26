@@ -1,17 +1,18 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Button } from "@material-ui/core";
+import {myTheme} from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   bttn: {
     textTransform: "none",
     "&:hover": {
-      backgroundColor: "#ffffff",
-      color: "#000000",
+    backgroundColor: myTheme.palette.common.white,
+      color: myTheme.palette.common.black,
     },
     "&:disabled": {
       backgroundColor: "grey",
-      color: "#000000",
+      color: myTheme.palette.common.black,
     },
   },
 }));

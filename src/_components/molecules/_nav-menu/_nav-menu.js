@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
   },
 }));
-
+ 
 export default function NavMenu(props) {
   const classes = useStyles();
   return (
-    <div className={classes.menuBox}>
+    <div className={classes.menuBox} style={props.style}>
       <Link className={classes.link} to="/home">
         <NavItem title={"Home"} active={true} />
       </Link>

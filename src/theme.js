@@ -6,8 +6,7 @@ import red from "@material-ui/core/colors/red";
 export const myTheme = createMuiTheme({
   palette: {
     primary: {
-      //   main: purple[500],   Colors need to be imported
-      main: green[500], // We can directly give colors in # without importing.
+      main: green[500],
     },
     secondary: {
       main: red[500],
@@ -47,15 +46,15 @@ export const myTheme = createMuiTheme({
       white: "#ffffff",
     },
     background: {
-      default: "rgb(240, 243, 243)",
-      paper: "darkslategrey",
+      default: "#e7f1f7",
+      paper: '#3a3d57',
     },
   },
   typography: {
     h3: {
       fontSize: "20px",
       textAlign: "center",
-      color: "#ffffff",
+      color: "black",
       fontStyle: "bold",
       fontFamily: "poppins",
       fontWeight: "10px",
@@ -76,20 +75,19 @@ export const myTheme = createMuiTheme({
       fontFamily: "poppins",
     },
     body2: {
-        fontSize: "17px",
-        color: "#ffffff",
-        lineHeight: "2",
-        fontWeight: "600",
-        fontFamily: "poppins",
-      },
-      subtitle1: {
-        fontSize: "17px",
-        //color: "#ffffff",
-        color: "#000000",
-        lineHeight: "1",
-        fontWeight: "600",
-        fontFamily: "poppins",
-      },
+      fontSize: "17px",
+      color: "#000000",
+      lineHeight: "2",
+      fontWeight: "600",
+      fontFamily: "poppins",
+    },
+    subtitle1: {
+      fontSize: "17px",
+      color: "#000000",
+      lineHeight: "1",
+      fontWeight: "600",
+      fontFamily: "poppins",
+    },
 
     h2: {
       fontSize: "35px",
@@ -100,10 +98,10 @@ export const myTheme = createMuiTheme({
       fontWeight: "30px",
     },
     h4: {
-        fontSize: "17px",
-        textDecoration: "none",
-        color: "#00000",
-         fontFamily: "poppins",
-      },
+      fontSize: "17px",
+      textDecoration: "none",
+      color: "#00000",
+      fontFamily: "poppins",
+    },
   },
 });

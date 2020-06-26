@@ -3,18 +3,17 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import MyButton from "../../atoms/_button/_button";
 import InputBox from "../../atoms/_input/_input";
-import {myTheme} from "../../../theme";
+import { myTheme } from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   box: {
     cursor: "pointer",
     width: "250px",
     height: "auto",
-  // backgroundColor: myTheme.palette.background.paper,
-  backgroundColor: '#fdfdfd',
-    boxShadow: '1px 2px 1px 5px #f7f9f9',
-  
-  display: "flex",
+    backgroundColor: myTheme.palette.common.white,
+    boxShadow: "20px 20px 60px #c4cdd2, -20px -20px 60px #fffff",
+
+    display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",

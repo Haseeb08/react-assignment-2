@@ -11,11 +11,11 @@ const useStyles = makeStyles((theme) => ({
     
   },
   text: {
-    color: "#ffffff",
+    color: "white",
     
   },
   link: {
-    color: "aqua",
+    color: "white",
   },
 }));
 
@@ -23,8 +23,8 @@ export default function FooterContent(props) {
   const classes = useStyles();
   return (
     <div className={classes.content}>
-      <div className={classes.text}>
-        <Typography>
+      <div >
+        <Typography className={classes.text}>
           2020 Copyright {"  :  "}
           <Link className={classes.link} href="https://github.com/Haseeb08/">
             git-haseeb

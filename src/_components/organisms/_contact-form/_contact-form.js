@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     borderRadius: "4px",
+    
   },
   firstName: {
     marginTop: "10px",
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#ffffff",
     color: "#000000",
     padding: "5px",
-    marginTop: "5px",
+    marginTop: "2px",
     borderRadius: "4px",
   },
   button: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#000000",
     textTransform: "none",
     width: "100%",
-    backgroundColor: "#ffffff",
+    backgroundColor: "grey",
     "&:hover": {
       backgroundColor: "#fffff3",
     },

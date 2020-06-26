@@ -7,8 +7,9 @@ import { myTheme } from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   addImageBox: {
-    backgroundColor: myTheme.palette.background.paper,
-    padding: "20px 15px 15px 20px",
+    backgroundColor: myTheme.palette.common.white,
+   borderRadius: "30px",
+   padding: "20px 15px 15px 20px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

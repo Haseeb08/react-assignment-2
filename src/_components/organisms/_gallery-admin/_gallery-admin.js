@@ -3,22 +3,15 @@ import { makeStyles } from "@material-ui/core/styles";
 import ImageBox from "../../molecules/_image-box/_image-box";
 import MyButton from "../../atoms/_button/_button";
 import AddImageBox from "../../molecules/_add-image/_add-image";
-import { myTheme } from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-   // backgroundColor: myTheme.palette.background.default,
-   background: 'rgb(34,193,195)',
-   background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%)',
-   
   },
   allImages: {
     display: "grid",
     gridTemplateColumns: "1fr 1fr 1fr",
     justifyItems: "center",
-   // width: "60%",
-    gridRowGap: "50px",
-    //gridColumnGap: "20px",
+    gridRowGap: "50px",   
     margin: "auto",
     padding: "40px 0",
   },
@@ -34,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function GalleryAdmin({ allImages, setAllImages }) {
   const classes = useStyles();
-  //const [allImages, setAllImages] = useState([...imagesData.images]);
   const [addImage, setAddImage] = useState(false);
   const [imageUrl, setimageUrl] = useState("");
   const [imageUrlError, setImageUrlError] = useState(" ");

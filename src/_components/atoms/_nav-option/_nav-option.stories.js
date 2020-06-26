@@ -20,19 +20,27 @@ var style = {
   fontWeight: "10px",
 
 };
-export const normal = () => {
+
+var boxStyle = {
+  backgroundColor: '#3a3d57',
+}
+var boxStyle2 = {
+  backgroundColor: "lightcyan",
+  color: "#000000",
+}
+
+export const item = () => {
   return (
     <ThemeProvider theme={myTheme}>
-      <NavItem title={text("title", "Home")} style={object("Style", style)} />
+      <NavItem title={text("title", "Home")} style={object("Style", style)} boxStyle={object("boxStyle", boxStyle)}/>
     </ThemeProvider>
   );
 };
 
-// export const hovered = () => {
-//     return (
-//       <ThemeProvider theme={myTheme}>
-//         <NavItem title={text("title", "Home")} style={object("Style", style)} />
-//       </ThemeProvider>
-//     );
-//   };
-  
+export const hovered = () => {
+  return (
+    <ThemeProvider theme={myTheme}>
+      <NavItem title={text("title", "Home")} style={object("Style", style)} boxStyle={object("boxStyle", boxStyle2)}/>
+    </ThemeProvider>
+  );
+};

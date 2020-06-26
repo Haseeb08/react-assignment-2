@@ -13,15 +13,8 @@ export default {
   decorators: [withKnobs],
 };
 
-// const image = {
-//   id: "1",
-//   name: "React",
-//   url:
-//     "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWXoLhb1QGq1B52D9rNOdWzmIdy0IVkmKk9Q&usqp=CAU",
-// };
-
 const boxStyle = {
-    backgroundColor: "darkslategrey",
+    backgroundColor: "white",
     height: "auto",
     width: "300px", 
 };

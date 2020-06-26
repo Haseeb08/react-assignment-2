@@ -10,13 +10,13 @@ export default {
   title: "Input field",
   decorators: [withKnobs],
 };
-
+ 
 var style = {
   fontSize: "15px",
   backgroundColor: "#ffffff",
   color: "#000000",
-  width: "100%",
-  border: "2px solid black",
+  width: "50%",
+ // border: "2px solid black",
 };
 export const normal = () => {
   return (
@@ -24,7 +24,6 @@ export const normal = () => {
       <Input
         onChange={action()}
         placeholder={text("placeholder", "Enter something")}
-        defaultValue={text("defaultValue", "Input")}
         onClick={action("Clicked")}
         style={object("Style", style)}
       />

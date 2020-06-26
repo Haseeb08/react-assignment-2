@@ -5,20 +5,16 @@ import { Link } from "react-router-dom";
 import { myTheme } from "../../../theme";
 
 const useStyles = makeStyles((theme) => ({
-  main: {
-    backgroundColor: "#f1dfcb",
-    minHeight: "86.5vh",
-  },
+  main: {},
   personal: {
     backgroundColor: myTheme.palette.background.default,
     paddingBottom: "5px",
   },
   tech: {
-    backgroundColor: "#e6e6e6",
+    backgroundColor: "#e7f1f7",
     paddingBottom: "5px",
   },
   head: {
-    //fontStyle: "bold",
     fontSize: "x-large",
     fontWeight: "bold",
     paddingTop: "15px",
@@ -29,8 +25,6 @@ export default function About(props) {
   const classes = useStyles();
   return (
     <div className={classes.main}>
-      {/* <Typography>{props.content || "About"}</Typography> */}
-
       <div className={classes.personal}>
         <Typography>
           <div className={classes.head}>About me</div>

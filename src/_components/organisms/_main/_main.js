@@ -11,8 +11,8 @@ import {myTheme} from "../../../theme";
  
 const useStyles = makeStyles((theme) => ({
   main: {
-    backgroundColor: myTheme.palette.background.default,
     minHeight: "86.5vh",
+    backgroundColor:  myTheme.palette.background.default,
   },
 }));
 
