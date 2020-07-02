@@ -6,10 +6,10 @@ import {myTheme} from "../../../theme";
 const useStyles = makeStyles((theme) => ({
   bttn: {
     textTransform: "none",
-    "&:hover": {
-    backgroundColor: myTheme.palette.common.white,
-      color: myTheme.palette.common.black,
-    },
+    // "&:hover": {
+    // backgroundColor: myTheme.palette.common.white,
+    //   color: myTheme.palette.common.black,
+    // },
     "&:disabled": {
       backgroundColor: "grey",
       color: myTheme.palette.common.black,
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function MyButton(props) {
+export default function MyButton({id,...props}) {
   const classes = useStyles();
   return (
     <Button
@@ -27,6 +27,7 @@ export default function MyButton(props) {
       className={classes.bttn}
       style={props.style}
       disabled={props.disabled}
+      {...props}
     >
       {props.value}
     </Button>

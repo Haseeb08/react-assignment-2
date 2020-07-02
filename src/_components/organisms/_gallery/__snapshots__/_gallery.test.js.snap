@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders gallery  Matches the snapshot 1`] = `
+<div
+  className="makeStyles-main-1"
+>
+  <div
+    className="makeStyles-allImages-2"
+  >
+    <div
+      className="makeStyles-box-3"
+    >
+      <div
+        className="makeStyles-image-4"
+        style={
+          Object {
+            "backgroundImage": "URL(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWXoLhb1QGq1B52D9rNOdWzmIdy0IVkmKk9Q&usqp=CAU)",
+          }
+        }
+      />
+      <div
+        className="makeStyles-text-5"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          React
+        </h6>
+      </div>
+    </div>
+    <div
+      className="makeStyles-box-3"
+    >
+      <div
+        className="makeStyles-image-4"
+        style={
+          Object {
+            "backgroundImage": "URL(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWXoLhb1QGq1B52D9rNOdWzmIdy0IVkmKk9Q&usqp=CAU)",
+          }
+        }
+      />
+      <div
+        className="makeStyles-text-5"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          React
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>
+`;

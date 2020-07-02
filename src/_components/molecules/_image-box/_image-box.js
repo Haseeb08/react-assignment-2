@@ -83,8 +83,9 @@ export default function ImageBox(props) {
 
       {!edit && props.isAdmin && (
         <div className={classes.buttons}>
-          <div className={classes.flexItem}>
+          <div className={classes.flexItem}  >
             <MyButton
+             data-testid="edit-button"
               onClick={handleEditClick}
               value={"Edit"}
               color={"primary"}
@@ -92,6 +93,7 @@ export default function ImageBox(props) {
           </div>
           <div className={classes.flexItem}>
             <MyButton
+            data-testid="delete-button"
               onClick={() => props.handleImageDelete(props.img)}
               value={"Delete"}
               color={"secondary"}
@@ -99,7 +101,7 @@ export default function ImageBox(props) {
             />
           </div>
         </div>
-      )}
+      )} 
       {edit && (
         <div className={classes.editBox}>
           <div className={classes.inputBox}>

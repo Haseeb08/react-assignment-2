@@ -36,7 +36,7 @@ export default function AddImageBox(props) {
 
   return (
     <div style={props.boxStyle} className={classes.addImageBox}>
-      <div className={classes.flexItem}>
+      <div className={classes.flexItem} >
         <Typography variant="h3">Enter image details</Typography>
       </div>
       <div className={classes.flexItem}>

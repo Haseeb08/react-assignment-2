@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-main-3"
+>
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
+  >
+    You can reach out to me by filling the following form.
+  </h2>
+  <div
+    className="makeStyles-form-4"
+  >
+    <div>
+      I am mocked
+    </div>
+  </div>
+</div>
+`;

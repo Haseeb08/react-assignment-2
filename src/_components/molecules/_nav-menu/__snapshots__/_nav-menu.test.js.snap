@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Image box testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-menuBox-1"
+>
+  <a
+    className="makeStyles-link-2"
+    href="/home"
+    onClick={[Function]}
+  >
+    <div
+      className="makeStyles-itemBox-3"
+      data-testid="input"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4"
+      >
+        Home
+      </h4>
+    </div>
+  </a>
+  <a
+    className="makeStyles-link-2"
+    href="/gallery"
+    onClick={[Function]}
+  >
+    <div
+      className="makeStyles-itemBox-3"
+      data-testid="input"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4"
+      >
+        Gallery
+      </h4>
+    </div>
+  </a>
+  <a
+    className="makeStyles-link-2"
+    href="/gallery-admin"
+    onClick={[Function]}
+  >
+    <div
+      className="makeStyles-itemBox-3"
+      data-testid="input"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4"
+      >
+        Admin
+      </h4>
+    </div>
+  </a>
+  <a
+    className="makeStyles-link-2"
+    href="/contact"
+    onClick={[Function]}
+  >
+    <div
+      className="makeStyles-itemBox-3"
+      data-testid="input"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4"
+      >
+        Contact
+      </h4>
+    </div>
+  </a>
+  <a
+    className="makeStyles-link-2"
+    href="/about"
+    onClick={[Function]}
+  >
+    <div
+      className="makeStyles-itemBox-3"
+      data-testid="input"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4"
+      >
+        About
+      </h4>
+    </div>
+  </a>
+</div>
+`;

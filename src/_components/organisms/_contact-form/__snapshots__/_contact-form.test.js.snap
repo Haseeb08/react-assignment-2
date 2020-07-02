@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-form-1"
+>
+  <form>
+    <div
+      className="makeStyles-firstName-2"
+    >
+      <div>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Name
+        </p>
+      </div>
+      <div>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-7 MuiInputBase-fullWidth MuiInput-fullWidth"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Enter name"
+            type="text"
+          />
+        </div>
+      </div>
+      <p
+        className="MuiTypography-root makeStyles-error-6 MuiTypography-body1"
+        data-testid="emailError"
+      />
+    </div>
+    <div
+      className="makeStyles-firstName-2"
+    >
+      <div>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Email
+        </p>
+      </div>
+      <div>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-7 MuiInputBase-fullWidth MuiInput-fullWidth"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="email"
+            type="email"
+          />
+        </div>
+      </div>
+      <p
+        className="MuiTypography-root makeStyles-error-6 MuiTypography-body1"
+      />
+    </div>
+    <div
+      className="makeStyles-firstName-2"
+    >
+      <div>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Phone number
+        </p>
+      </div>
+      <div>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-7 MuiInputBase-fullWidth MuiInput-fullWidth"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="phone number"
+            type="text"
+          />
+        </div>
+      </div>
+      <p
+        className="MuiTypography-root makeStyles-error-6 MuiTypography-body1"
+      />
+    </div>
+    <div
+      className="makeStyles-firstName-2"
+    >
+      <div>
+        <p
+          className="MuiTypography-root MuiTypography-body2"
+        >
+          Subject
+        </p>
+      </div>
+      <div>
+        <div
+          className="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-7 MuiInputBase-fullWidth MuiInput-fullWidth"
+          onClick={[Function]}
+        >
+          <input
+            className="MuiInputBase-input MuiInput-input"
+            onAnimationStart={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            placeholder="Subject"
+            type="text"
+          />
+        </div>
+      </div>
+      <p
+        className="MuiTypography-root makeStyles-error-6 MuiTypography-body1"
+      />
+    </div>
+    <div
+      className="makeStyles-button-4"
+    >
+      <button
+        className="MuiButtonBase-root MuiButton-root MuiButton-text makeStyles-button1-5"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        <span
+          className="MuiButton-label"
+        >
+          Submit
+        </span>
+      </button>
+    </div>
+  </form>
+</div>
+`;

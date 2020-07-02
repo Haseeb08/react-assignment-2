@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 export default function FooterContent(props) {
   const classes = useStyles();
   return (
-    <div className={classes.content}>
+    <div className={classes.content} data-testid="footer">
       <div >
         <Typography className={classes.text}>
           2020 Copyright {"  :  "}

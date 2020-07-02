@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav item testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-itemBox-1"
+  data-testid="input"
+>
+  <h4
+    className="MuiTypography-root MuiTypography-h4"
+  >
+    Name
+  </h4>
+</div>
+`;

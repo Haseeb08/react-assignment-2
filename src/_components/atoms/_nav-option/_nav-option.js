@@ -36,7 +36,7 @@ active: {
 export default function NavItem(props) {
   const classes = useStyles();
   return (
-    <div style={props.boxStyle} className={(props.active===true && classes.active) + " " +classes.itemBox}>
+    <div style={props.boxStyle} className={classes.itemBox} data-testid="input">
       <Typography variant="h4" className={classes.text} style={props.style}>{props.title}</Typography>
     </div>
   );

@@ -52,7 +52,6 @@ export default function ContactForm() {
   const [phoneError, setPhoneError] = useState("");
   const [subject, setSubject] = useState("");
   const [subjectError, setSubjectError] = useState("");
-  const [error, setError] = useState(true);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -89,13 +88,6 @@ export default function ContactForm() {
     if (subject === "" || subject === null)
       setSubjectError("* Subject cannot be empty");
     else setSubjectError("");
-
-  //   if(nameError!=="" || emailError!=="" || phoneError!=="" || subjectError!=="" )
-  //   {
-  //    setError(true);
-  //   }
-  //   else
-  //   setError(false);
    };
 
   return (
@@ -110,7 +102,7 @@ export default function ContactForm() {
             }}
             placeholder={"Enter name"}
           />
-          <Typography className={classes.error}>
+          <Typography data-testid="emailError" className={classes.error}>
             {nameError !== "" && nameError}
           </Typography>
         </div>

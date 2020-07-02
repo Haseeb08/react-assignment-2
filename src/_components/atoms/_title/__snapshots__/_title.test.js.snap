@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title testing Matches the snapshot 1`] = `
+<h2
+  className="MuiTypography-root MuiTypography-h2"
+>
+  test title 
+</h2>
+`;

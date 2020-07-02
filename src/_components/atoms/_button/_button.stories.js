@@ -11,10 +11,6 @@ export default {
   decorators: [withKnobs],
 };
 
-// var props = {
-//   value: "hello",
-//   color: "primary",
-// };
 
 var style = {
   fontSize: "13px",

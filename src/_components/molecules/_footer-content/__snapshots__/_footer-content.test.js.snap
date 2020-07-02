@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Image box testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-content-1"
+  data-testid="footer"
+>
+  <div>
+    <p
+      className="MuiTypography-root makeStyles-text-2 MuiTypography-body1"
+    >
+      2020 Copyright 
+        :  
+      <a
+        className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-link-3 MuiTypography-colorPrimary"
+        href="https://github.com/Haseeb08/"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        git-haseeb
+      </a>
+    </p>
+  </div>
+</div>
+`;

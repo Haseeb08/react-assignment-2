@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-main-1"
+>
+  <div
+    className="makeStyles-personal-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      <div
+        className="makeStyles-head-4"
+      >
+        About me
+      </div>
+      <br />
+      Name :- Abdul Haseeb Chouhan
+      <br />
+      Contact no :- +91 **********
+      <br />
+      Email :-
+       
+      <a
+        href="/yourhaseeb08@gmail.com"
+        onClick={[Function]}
+      >
+        yourhaseeb08@gmail.com
+      </a>
+      <br />
+      Linkedin :-
+       
+      <a
+        href="/https://github.com/Haseeb08/"
+        onClick={[Function]}
+      >
+         Haseeb08.
+      </a>
+    </p>
+  </div>
+  <div
+    className="makeStyles-tech-3"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      <div
+        className="makeStyles-head-4"
+      >
+        Technical skills
+      </div>
+      <br />
+      Programming languages : C, CPP, Java
+      <br />
+      Database : MySQL, PostgreSQL, H2
+      <br />
+      Front-end : HTML, CSS, bootstrap, javaScript, thymeleaf, react
+    </p>
+  </div>
+  <div
+    className="makeStyles-personal-2"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      <div
+        className="makeStyles-head-4"
+      >
+        Project
+      </div>
+      <br />
+      TodoApp : Springboot, react and microservices architecture.
+      <br />
+      Rehabit : Springboot, thymeleaf, mySQL database.
+      <br />
+    </p>
+  </div>
+  <div
+    className="makeStyles-tech-3"
+  >
+    <p
+      className="MuiTypography-root MuiTypography-body1"
+    >
+      <div
+        className="makeStyles-head-4"
+      >
+        Personal details
+      </div>
+      <br />
+      Date of Birth : 8 th July 1998.
+      <br />
+      Languages known : English, Hindi, Urdu.
+      <br />
+      Hobbies and Interests : Swimming,playing cricket and football
+      <br />
+      Travelling and Exploring new places,
+      <br />
+      Cooking, Reading Books, Watching Tv series.
+      <br />
+      Blogger :- Explore Hyderabad
+      <a
+        href="/https://itshyd.blogspot.com/"
+        onClick={[Function]}
+      >
+        <br />
+        check my blog..!
+      </a>
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders gallery  Adding image button  1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-main-1"
+  >
+    <div
+      class="makeStyles-addButton-3"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+        tabindex="0"
+        type="button"
+        value="Add image"
+      >
+        <span
+          class="MuiButton-label"
+        >
+          Add image
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+    <div
+      class="makeStyles-addImageBox-4"
+    >
+      <div
+        class="makeStyles-addImageBox-14"
+      >
+        <div
+          class="makeStyles-flexItem-16"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h3"
+          >
+            Enter image details
+          </h3>
+        </div>
+        <div
+          class="makeStyles-flexItem-16"
+        >
+          <div>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-18 MuiInputBase-fullWidth MuiInput-fullWidth"
+              required=""
+            >
+              <input
+                class="MuiInputBase-input MuiInput-input"
+                placeholder="Enter URL"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root makeStyles-error-17 MuiTypography-body1"
+          >
+             
+          </p>
+        </div>
+        <div
+          class="makeStyles-flexItem-16"
+        >
+          <div>
+            <div
+              class="MuiInputBase-root MuiInput-root MuiInput-underline makeStyles-input-18 MuiInputBase-fullWidth MuiInput-fullWidth"
+              required=""
+            >
+              <input
+                class="MuiInputBase-input MuiInput-input"
+                placeholder="Enter title"
+                required=""
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <p
+            class="MuiTypography-root makeStyles-error-17 MuiTypography-body1"
+          />
+        </div>
+        <button
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-15 MuiButton-containedPrimary"
+          tabindex="0"
+          type="button"
+          value="Add"
+        >
+          <span
+            class="MuiButton-label"
+          >
+            Add
+          </span>
+          <span
+            class="MuiTouchRipple-root"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      class="makeStyles-allImages-2"
+    >
+      <div
+        class="makeStyles-box-6"
+      >
+        <div
+          class="makeStyles-image-7"
+        />
+        <div
+          class="makeStyles-text-8"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1"
+          >
+            React
+          </h6>
+        </div>
+        <div
+          class="makeStyles-buttons-9"
+        >
+          <div
+            class="makeStyles-flexItem-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+              data-testid="edit-button"
+              tabindex="0"
+              type="button"
+              value="Edit"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-flexItem-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-flexItem-10 MuiButton-containedSecondary"
+              data-testid="delete-button"
+              tabindex="0"
+              type="button"
+              value="Delete"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="makeStyles-box-6"
+      >
+        <div
+          class="makeStyles-image-7"
+        />
+        <div
+          class="makeStyles-text-8"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1"
+          >
+            React
+          </h6>
+        </div>
+        <div
+          class="makeStyles-buttons-9"
+        >
+          <div
+            class="makeStyles-flexItem-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+              data-testid="edit-button"
+              tabindex="0"
+              type="button"
+              value="Edit"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Edit
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+          <div
+            class="makeStyles-flexItem-10"
+          >
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-flexItem-10 MuiButton-containedSecondary"
+              data-testid="delete-button"
+              tabindex="0"
+              type="button"
+              value="Delete"
+            >
+              <span
+                class="MuiButton-label"
+              >
+                Delete
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`renders gallery  Matches the snapshot 1`] = `
+<div
+  className="makeStyles-main-1"
+>
+  <div
+    className="makeStyles-addButton-3"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+      value="Add image"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        Add image
+      </span>
+    </button>
+  </div>
+  <div
+    className="makeStyles-allImages-2"
+  >
+    <div
+      className="makeStyles-box-6"
+    >
+      <div
+        className="makeStyles-image-7"
+        style={
+          Object {
+            "backgroundImage": "URL(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWXoLhb1QGq1B52D9rNOdWzmIdy0IVkmKk9Q&usqp=CAU)",
+          }
+        }
+      />
+      <div
+        className="makeStyles-text-8"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          React
+        </h6>
+      </div>
+      <div
+        className="makeStyles-buttons-9"
+      >
+        <div
+          className="makeStyles-flexItem-10"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+            data-testid="edit-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+            value="Edit"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Edit
+            </span>
+          </button>
+        </div>
+        <div
+          className="makeStyles-flexItem-10"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-flexItem-10 MuiButton-containedSecondary"
+            data-testid="delete-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+            value="Delete"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Delete
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="makeStyles-box-6"
+    >
+      <div
+        className="makeStyles-image-7"
+        style={
+          Object {
+            "backgroundImage": "URL(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWXoLhb1QGq1B52D9rNOdWzmIdy0IVkmKk9Q&usqp=CAU)",
+          }
+        }
+      />
+      <div
+        className="makeStyles-text-8"
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-subtitle1"
+        >
+          React
+        </h6>
+      </div>
+      <div
+        className="makeStyles-buttons-9"
+      >
+        <div
+          className="makeStyles-flexItem-10"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-bttn-5 MuiButton-containedPrimary"
+            data-testid="edit-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+            value="Edit"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Edit
+            </span>
+          </button>
+        </div>
+        <div
+          className="makeStyles-flexItem-10"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-flexItem-10 MuiButton-containedSecondary"
+            data-testid="delete-button"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+            value="Delete"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Delete
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

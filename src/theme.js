@@ -7,6 +7,7 @@ export const myTheme = createMuiTheme({
   palette: {
     primary: {
       main: green[500],
+       dark: red[500],
     },
     secondary: {
       main: red[500],
@@ -29,7 +30,7 @@ export const myTheme = createMuiTheme({
     divider: "#000",
     action: {
       active: "#000",
-      hover: "#000",
+      hover: "red[500]",
       selected: "#000",
       disabled: "#000",
       disabledBackground: "#000",

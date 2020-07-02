@@ -34,10 +34,10 @@ export default function About(props) {
           Contact no :- +91 **********
           <br></br>
           Email :-{" "}
-          <Link href="yourhaseeb08@gmail.com">yourhaseeb08@gmail.com</Link>
+          <Link to="yourhaseeb08@gmail.com">yourhaseeb08@gmail.com</Link>
           <br></br>
           Linkedin :-{" "}
-          <Link href="https://github.com/Haseeb08/"> Haseeb08.</Link>
+          <Link to="https://github.com/Haseeb08/"> Haseeb08.</Link>
         </Typography>
       </div>
       <div className={classes.tech}>
@@ -76,7 +76,7 @@ export default function About(props) {
           Cooking, Reading Books, Watching Tv series.
           <br></br>
           Blogger :- Explore Hyderabad
-          <Link href="https://itshyd.blogspot.com/">
+          <Link to="https://itshyd.blogspot.com/">
             <br></br>check my blog..!
           </Link>
         </Typography>
