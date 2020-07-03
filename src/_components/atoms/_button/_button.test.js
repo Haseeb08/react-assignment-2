@@ -1,12 +1,8 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import { render, screen, getByRole } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Button from "./_button";
-
-beforeEach(() => {
-    render(<Button value={"abc"} />);
-  });
 
 describe("Button testing", () => {
 
@@ -16,19 +12,16 @@ describe("Button testing", () => {
   });
 
   test("Button is present", () => {
-   
-    //const {getByRole} = render(<Button />);
-    // const button = getByRole("button");
-
-    // Using screen
-
-    const button = screen.getByRole("button");
+    const {getByRole}=  render(<Button value={"abc"} />);
+    const button = getByRole("button");
     expect(button).toBeInTheDocument();
+    expect(button).toHaveTextContent("abc");
   });
 
-  test("Button to have some value",()=>{
-   // const {getByRole} = render(<Button />);
-    const button = screen.getByRole("button");
-    expect(button).toHaveTextContent("abc");
+  test("Button onclick check",()=>{
+    const mockClickMethod = jest.fn();
+  const {getByRole}=  render(<Button value={"abc"} onClick={mockClickMethod}/>);
+    fireEvent.click(getByRole("button"));
+    expect(mockClickMethod).toHaveBeenCalledTimes(1);
   });
 });

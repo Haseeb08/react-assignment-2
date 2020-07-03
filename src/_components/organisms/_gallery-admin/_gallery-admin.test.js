@@ -3,7 +3,7 @@ import { create } from "react-test-renderer";
 import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 import Gallery from "./_gallery-admin";
-import { jssPreset } from "@material-ui/core";
+import { jssPreset, Container } from "@material-ui/core";
 
 const image = [
   {
@@ -27,17 +27,20 @@ describe("renders gallery ", () => {
 
   test("Adding image button ", () => {
 
-    jest.mock("../../molecules/_add-image/_add-image", () => () => (
-      <div />
-    ));
+    jest.mock("../../molecules/_add-image/_add-image", () => ({
+      __esModule: true,
+      default: ()=><div>Add image box</div>
+  }) );
   const mockHandleImageAdd = jest.fn();
-        const { getByText ,container,asFragment} = render(<Gallery allImages={image} isAdmin={true} />);
-    const button = getByText("Add image");
-    fireEvent.click(button);
-    expect(asFragment()).toMatchSnapshot();
-     // expect(handleImageAdd).toHaveBeenCalledTimes(0);
+        const { getByText, getAllByRole,container,asFragment} = render(<Gallery setAllImages={mockHandleImageAdd} allImages={image} isAdmin={true} />);
+    const buttons = getAllByRole("button");
+    fireEvent.click(buttons[0]);
+   expect(asFragment()).toMatchSnapshot();
+   console.log(container)
+    // expect(mockHandleImageAdd).toHaveBeenCalledTimes(1);
    // expect(input.toJSON()).toMatchSnapshot();
     // expect(container.textContent)
-    // .toMatch('Add imageEnter image details AddReactEdit DeleteReactEditDelete');
+    // .toMatch('Add image box');
   });
 });
+ 

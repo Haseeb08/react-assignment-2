@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-main-1"
+>
+  <h2
+    className="MuiTypography-root MuiTypography-h2"
+  >
+    Welcome
+  </h2>
+  <div
+    className="makeStyles-image-2"
+  >
+    <img
+      alt="profile pic"
+      height="300"
+      src="https://w1.pngwave.com/png/759/641/143/glasses-cartoon-face-eyewear-head-male-finger-png-clip-art-thumbnail.png"
+      style={
+        Object {
+          "borderRadius": "100%",
+        }
+      }
+      width="250"
+    />
+  </div>
+  <h5
+    className="MuiTypography-root MuiTypography-h5"
+  >
+    Abdul Haseeb
+  </h5>
+  <p
+    className="MuiTypography-root MuiTypography-body1"
+  >
+    Incoming Fullstack engineer at Zemoso Technologies.
+  </p>
+</div>
+`;

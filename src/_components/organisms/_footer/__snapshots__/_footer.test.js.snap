@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component testing Matches the snapshot 1`] = `
+<div
+  className="makeStyles-footer-1"
+>
+  <div
+    className="makeStyles-content-2"
+    data-testid="footer"
+  >
+    <div>
+      <p
+        className="MuiTypography-root makeStyles-text-3 MuiTypography-body1"
+      >
+        2020 Copyright 
+          :  
+        <a
+          className="MuiTypography-root MuiLink-root MuiLink-underlineHover makeStyles-link-4 MuiTypography-colorPrimary"
+          href="https://github.com/Haseeb08/"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          git-haseeb
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;
