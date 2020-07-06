@@ -16,19 +16,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Main(props) {
+export default function Main() {
   const [allImages, setAllImages] = useState([...ImagesJSON.images]);
   const classes = useStyles();
   return (
     <div className={classes.main}>
       <Route exact path="/home" component={withRouter(Home)} />
 
-      {/* <Route path="/gallery-admin" component={GalleryAdmin} /> */}
-
-      {/* <Route path="/gallery" component={Gallery} /> */}
-      <Route
-        path="/gallery">
-      <Gallery allImages={allImages} />
+      <Route path="/gallery">
+        <Gallery allImages={allImages} />
       </Route>
 
       <Route path="/gallery-admin">
@@ -40,4 +36,4 @@ export default function Main(props) {
       <Route path="/about" component={withRouter(About)} />
     </div>
   );
-} 
+}

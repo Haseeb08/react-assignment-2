@@ -1,19 +1,25 @@
-import React, { useEffect } from 'react';
-import Auth from "./Auth";
-import Loading from '../_components/atoms/_loading/_loading';
+import React, { useEffect, useContext } from "react";
+import Loading from "../_components/atoms/_loading/_loading";
+import { AuthContext } from "../AuthContext";
 
 function Callback() {
-    console.log("inside callback");
-    useEffect(()=>{
-        console.log("inside callback");
-        const auth = new Auth();
-        auth.handleAuthentication();
-    } )
+  const value = useContext(AuthContext);
+  console.log("inside callback");
+  useEffect(() => {
+    value.handleAuthentication();
+  });
 
-    return(
-        <div style={{height:"92vh", display:"flex",justifyContent:"center",alignItems:"center"}}>
-            <Loading />
-        </div>
-    )
+  return (
+    <div
+      style={{
+        height: "92vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Loading />
+    </div>
+  );
 }
 export default Callback;
